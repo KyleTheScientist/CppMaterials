@@ -2,7 +2,7 @@
 using System;
 using System.Reflection;
 
-namespace CPPMaterials.Source
+namespace CppMaterials.Source
 {
     public class HarmonyPatches
     {

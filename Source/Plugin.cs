@@ -1,13 +1,13 @@
 ﻿using BepInEx;
-using CPPMaterials.Source.Tools;
-using CPPMaterials.Source.GorillaCosmetics;
+using CppMaterials.Source.Tools;
+using CppMaterials.Source.GorillaCosmetics;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using Utilla;
 
-namespace CPPMaterials.Source
+namespace CppMaterials.Source
 {
     [BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
     [BepInDependency("org.legoandmars.gorillatag.utilla", "1.6.11")]

@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace CPPMaterials.Source.GorillaCosmetics
+namespace CppMaterials.Source.GorillaCosmetics
 {
     public class GorillaMaterial
     {

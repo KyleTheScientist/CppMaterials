@@ -1,10 +1,10 @@
 ﻿using BepInEx.Logging;
-using CPPMaterials.Source;
+using CppMaterials.Source;
 using Photon.Pun;
 using System;
 using System.Diagnostics;
 
-namespace CPPMaterials.Source.Tools
+namespace CppMaterials.Source.Tools
 {
     public static class Logging
     {

@@ -1,6 +1,7 @@
 ﻿using ComputerPlusPlus.Tools;
-using CPPMaterials.Source.GorillaCosmetics;
+using CppMaterials.Source.GorillaCosmetics;
 using ExitGames.Client.Photon;
+using GorillaNetworking;
 using Photon.Pun;
 using Photon.Realtime;
 using System;
@@ -8,7 +9,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-namespace CPPMaterials.Source
+namespace CppMaterials.Source
 {
     public class MaterialController : MonoBehaviourPunCallbacks
     {
@@ -16,7 +17,7 @@ namespace CPPMaterials.Source
         public VRRig rig;
         Material defaultMaterial;
         GorillaMaterial currentMaterial;
-        public const string MaterialKey = "CPPMaterials::Material";
+        public const string MaterialKey = "CppMaterials::Material";
 
         void Awake()
         {
@@ -39,7 +40,9 @@ namespace CPPMaterials.Source
         {
             if (mat == null)
                 mat = Plugin.Instance.materials[0];
-            rig.materialsToChangeTo[0] = mat.GetMaterial();
+            var material = mat.GetMaterial();
+            material.color = rig.materialsToChangeTo[0].color;
+            rig.materialsToChangeTo[0] = material;
             rig.ChangeMaterialLocal(rig.setMatIndex);
             currentMaterial = mat;
             if (this == LocalInstance)

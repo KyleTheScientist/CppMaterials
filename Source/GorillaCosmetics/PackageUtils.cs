@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace CPPMaterials.Source.GorillaCosmetics
+namespace CppMaterials.Source.GorillaCosmetics
 {
     public static class PackageUtils
     {

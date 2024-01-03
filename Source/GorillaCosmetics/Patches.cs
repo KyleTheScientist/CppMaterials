@@ -1,11 +1,12 @@
-﻿using CPPMaterials.Source.Tools;
+﻿using CppMaterials.Source.Tools;
 using HarmonyLib;
 using System.Collections.Generic;
 using System.Reflection;
 using System;
+using UnityEngine;
 using Photon.Realtime;
 
-namespace CPPMaterials.Source.GorillaCosmetics
+namespace CppMaterials.Source.GorillaCosmetics
 {
     [HarmonyPatch(typeof(VRRig))]
     [HarmonyPatch("Awake", MethodType.Normal)]
@@ -52,6 +53,14 @@ namespace CPPMaterials.Source.GorillaCosmetics
             OnRigRemoved?.Invoke(player, vrrig);
         }
 
-
+        [HarmonyPatch(typeof(VRRig))]
+        [HarmonyPatch("InitializeNoobMaterialLocal", MethodType.Normal)]
+        internal class ColorPatch
+        {
+            internal static void Postfix(VRRig __instance, float red, float green, float blue)
+            {
+                __instance.materialsToChangeTo[0].color = new Color(red, green, blue);
+            }
+        }
     }
 }

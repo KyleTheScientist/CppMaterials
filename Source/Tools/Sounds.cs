@@ -1,4 +1,4 @@
-﻿namespace CPPMaterials.Source.Tools
+﻿namespace CppMaterials.Source.Tools
 {
     public static class Sounds
     {

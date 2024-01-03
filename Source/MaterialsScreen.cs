@@ -1,7 +1,7 @@
 ﻿using ComputerPlusPlus;
-using CPPMaterials.Source;
+using CppMaterials.Source;
 using GorillaNetworking;
-using Plugin = CPPMaterials.Source.Plugin;
+using Plugin = CppMaterials.Source.Plugin;
 
 public class MaterialsScreen : IScreen
 {

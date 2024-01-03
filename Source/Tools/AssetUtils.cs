@@ -3,7 +3,7 @@ using System.IO;
 using System.Reflection;
 using UnityEngine;
 
-namespace CPPMaterials.Source.Tools
+namespace CppMaterials.Source.Tools
 {
     public static class AssetUtils
     {

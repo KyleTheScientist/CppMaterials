@@ -2,7 +2,7 @@
 using System.Text;
 using UnityEngine;
 
-namespace CPPMaterials.Source.Tools
+namespace CppMaterials.Source.Tools
 {
     public static class Extensions
     {
