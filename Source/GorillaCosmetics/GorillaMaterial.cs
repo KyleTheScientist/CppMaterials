@@ -47,6 +47,7 @@ namespace CppMaterials.Source.GorillaCosmetics
             {
                 Descriptor = new CosmeticDescriptor();
                 Descriptor.Name = "Default";
+                Descriptor.Author = "Gorilla Tag";
                 Descriptor.CustomColors = true;
                 material = GorillaTagger.Instance.offlineVRRig.materialsToChangeTo[0];
             }
